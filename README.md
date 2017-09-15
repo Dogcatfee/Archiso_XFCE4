@@ -53,7 +53,7 @@ RUNNING BUILDS
   to use with pacstrap's '-i' interactive mode, or the archiso build will 
   stall.
 -----------------------------------------------------------------------------
-WARNING: Compressing the lzma portion is highly taxing on the CPU, 
+WARNING: Compressing the disk is highly taxing on the CPU, 
   recommended not to run builds on unstable CPUs. Those at risk of
   overheating or otherwise.
 -----------------------------------------------------------------------------
