@@ -18,7 +18,7 @@ WARNING: Compressing the lzma portion is highly taxing on the CPU,
   >- Makefile clean is a shortcut for sudo rm -r ./work
   >- Packages can be added to or removed from packages.x86_64
   >- Users can be added through the file airootfs/root/customize_airootfs.sh
-  >- Services and comfigs can also be written through
+  >- Services and configs can also be written through
     airootfs/root/customize_airootfs.sh
 -----------------------------------------------------------------------------
  * Aur Packages Setup:
@@ -36,9 +36,9 @@ WARNING: Compressing the lzma portion is highly taxing on the CPU,
   >- cd to designated aur folder
   >- run "repo-add ./custom.db.tar.gz ./*" to build the custom repo
   >- Set the "Server = " line in ./pacman.conf to point to your new custom repo,
-   - absalute paths are simplest.
+     absalute paths are simplest.
   >- Add aur packages to be installed to packages.x86_64, package name does not 
-    require version number, ex: yaourt-1.9-1-any.pkg.tar.xz is just "yaourt"
+     require version number, ex: yaourt-1.9-1-any.pkg.tar.xz is just "yaourt"
 -----------------------------------------------------------------------------
  * If archiso/releng script breaks from a script update ( booting iso breaks
     at waiting for disk by id ).
