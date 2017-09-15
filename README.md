@@ -2,6 +2,7 @@
 RUNNING BUILDS
 =============================================================================
  * Basic requirement stuff:
+  >- Arch Linux install 64-bit
   >- Have all required dependencies installed, including the archiso package.
   >- Have at least 5G of free disk space for a minimal build environment. 10G
     recommended.
