@@ -52,7 +52,8 @@ RUNNING BUILDS
   when running builds from ./build.sh. The '-v' verbose argument is required 
   to use with pacstrap's '-i' interactive mode, or the archiso build will 
   stall.
-=============================================================================
+-----------------------------------------------------------------------------
 WARNING: Compressing the lzma portion is highly taxing on the CPU, 
   recommended not to run builds on unstable CPUs. Those at risk of
   overheating or otherwise.
+-----------------------------------------------------------------------------
