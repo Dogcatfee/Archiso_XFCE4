@@ -1,3 +1,28 @@
+ISO SEP-15-2017
+=============================================================================
+Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=sharing
+  * Notable packages, includes AUR packages
+   * Desktop
+     >- Lightdm ( enabled )
+     >- XFCE4
+     >- i3
+   * Browsers
+     >- chromium
+     >- firefox
+     >- midori
+   * Dev tools
+     >- vim
+     >- Visual Studio Code
+     >- git
+     >- base-devel
+   * Themes
+     >- Paper icons
+     >- Arc gtk themes
+   * System
+     >- Gparted
+     >- Pacaur & Yaourt
+     >- TLP ( enabled )
+     >- sudo
 
 RUNNING BUILDS
 =============================================================================
