@@ -1,15 +1,13 @@
- ____                    _               ____        _ _     _         == 
-|  _ \ _   _ _ __  _ __ (_)_ __   __ _  | __ ) _   _(_) | __| |___     ==   
-| |_) | | | | '_ \| '_ \| | '_ \ / _` | |  _ \| | | | | |/ _` / __|    == 
-|  _ <| |_| | | | | | | | | | | | (_| | | |_) | |_| | | | (_| \__ \    ==   
-|_| \_\\__,_|_| |_|_| |_|_|_| |_|\__, | |____/ \__,_|_|_|\__,_|___/    ==   
-                                 |___/                                 ==
+
+RUNNING BUILDS
+
+=============================================================================
 WARNING: Compressing the lzma portion is highly taxing on the CPU, 
   recommended not to run builds on unstable CPUs. Those at risk of
   overheating or otherwise.
 =============================================================================
  * Basic requirement stuff:
-  > Have all required dependencies installed, including the archiso package.
+  >- Have all required dependencies installed, including the archiso package.
   > Have at least 5G of free disk space for a minimal build environment. 10G
     recommended.
   > You the builder will want a virtual environment to test the ISOs, 
