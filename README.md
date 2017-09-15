@@ -10,6 +10,8 @@ RUNNING BUILDS
   >- A CPU with reliable voltages and reliable heat transfer.
 -----------------------------------------------------------------------------
  * Basic explanation stuff:
+  >- ./setup_path.sh is to add the last line to ./pacman.conf for
+    the aur packages. Build will not continue without this.
   >- Makefile build is a shortcut for sudo ./build.sh -v 
   >- Makefile clean is a shortcut for sudo rm -r ./work
   >- Packages can be added to or removed from packages.x86_64
@@ -53,7 +55,7 @@ RUNNING BUILDS
   to use with pacstrap's '-i' interactive mode, or the archiso build will 
   stall.
 -----------------------------------------------------------------------------
-WARNING: Compressing the disk is highly taxing on the CPU, 
-  recommended not to run builds on unstable CPUs. Those at risk of
+WARNING: Compressing the disk is highly taxing on the CPU,
+  recommend not running builds on unstable CPUs. Those at risk of
   overheating or otherwise.
 -----------------------------------------------------------------------------
