@@ -1,5 +1,6 @@
 ISO SEP-15-2017
 =============================================================================
+Use link if not able to build.
 Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=sharing
   * Notable packages, includes AUR packages
    * Desktop
