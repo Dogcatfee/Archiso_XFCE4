@@ -24,8 +24,8 @@ chsh -s /bin/zsh user
 
 ##Get decorative images for xfce & cinnamon
 mkdir /home/user/images
-curl https://i.imgur.com/fjMEaJ3.png > /home/user/images/xfce4_background.png
-curl https://i.imgur.com/Q26tuNO.png > /home/user/images/xfce4_launcher.png
+curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_background.png > /home/user/images/xfce4_background.png
+curl  https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_launcher.png> /home/user/images/xfce4_launcher.png
 
 ##Xfce4 configs
 mkdir /home/user/.config
@@ -49,7 +49,7 @@ chown -R user /home/user/.config
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ##Lightdm config
-curl https://i.imgur.com/ttwtssV.jpg > /etc/lightdm/background.jpg
+curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/background.jpg > /etc/lightdm/background.jpg
 echo  "[greeter]" > /etc/lightdm/lightdm-gtk-greeter.conf
 echo  "theme-name = Arc-Dark" >> /etc/lightdm/lightdm-gtk-greeter.conf
 echo  "icon-theme-name = Arc" >> /etc/lightdm/lightdm-gtk-greeter.conf
