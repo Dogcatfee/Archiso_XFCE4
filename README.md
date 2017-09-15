@@ -27,11 +27,11 @@ WARNING: Compressing the lzma portion is highly taxing on the CPU,
   >- Fully update the system
   >- Make a folder to store the custom repo ( "mkdir aur_repo" )
   >- Repeat for each wanted Aur package --
-    >>- cd to a temporary directory ex: /tmp
-    >>- git clone a wanted package to the temp directory
-    >>- cd into the cloned package's directory 
-    >>- run "makepkg -s" to build the PKGBUILD
-    >>- mv or cp the file ending with .pkg.tar.xz to your designated Aur folder.
+  >- cd to a temporary directory ex: /tmp
+  >- git clone a wanted package to the temp directory
+  >- cd into the cloned package's directory 
+  >- run "makepkg -s" to build the PKGBUILD
+  >- mv or cp the file ending with .pkg.tar.xz to your designated Aur folder.
   >- End --
   >- cd to designated aur folder
   >- run "repo-add ./custom.db.tar.gz ./*" to build the custom repo
