@@ -53,7 +53,7 @@ RUNNING BUILDS
   to use with pacstrap's '-i' interactive mode, or the archiso build will 
   stall.
 -----------------------------------------------------------------------------
-WARNING: Compressing the disk is highly taxing on the CPU, 
-  recommended not to run builds on unstable CPUs. Those at risk of
+WARNING: Compressing the disk is highly taxing on the CPU,
+  recommend not running builds on unstable CPUs. Those at risk of
   overheating or otherwise.
 -----------------------------------------------------------------------------
