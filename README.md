@@ -3,7 +3,6 @@ ISO SEP-15-2017
 Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=sharing
   * Notable packages, includes AUR packages
    * Desktop
-     >- Linux Kernel 4.12.13-1
      >- Lightdm ( enabled )
      >- XFCE4
      >- i3
@@ -20,6 +19,7 @@ Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=shar
      >- Paper icons
      >- Arc gtk themes
    * System
+     >- Linux Kernel 4.12.13-1
      >- Gparted
      >- Pacaur & Yaourt
      >- TLP ( enabled )
