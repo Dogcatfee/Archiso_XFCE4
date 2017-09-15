@@ -1,6 +1,7 @@
 
-RUNNING BUILDS
+**RUNNING BUILDS**
 
+=============================================================================
 =============================================================================
 WARNING: Compressing the lzma portion is highly taxing on the CPU, 
   recommended not to run builds on unstable CPUs. Those at risk of
