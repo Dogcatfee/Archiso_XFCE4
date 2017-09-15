@@ -1,10 +1,6 @@
 
 RUNNING BUILDS
 =============================================================================
-WARNING: Compressing the lzma portion is highly taxing on the CPU, 
-  recommended not to run builds on unstable CPUs. Those at risk of
-  overheating or otherwise.
-=============================================================================
  * Basic requirement stuff:
   >- Have all required dependencies installed, including the archiso package.
   >- Have at least 5G of free disk space for a minimal build environment. 10G
@@ -56,3 +52,7 @@ WARNING: Compressing the lzma portion is highly taxing on the CPU,
   when running builds from ./build.sh. The '-v' verbose argument is required 
   to use with pacstrap's '-i' interactive mode, or the archiso build will 
   stall.
+=============================================================================
+WARNING: Compressing the lzma portion is highly taxing on the CPU, 
+  recommended not to run builds on unstable CPUs. Those at risk of
+  overheating or otherwise.
