@@ -26,13 +26,13 @@ WARNING: Compressing the lzma portion is highly taxing on the CPU,
     that is usable as a custom repo in last three lines of ./pacman.conf.
   >- Fully update the system
   >- Make a folder to store the custom repo ( "mkdir aur_repo" )
-  -- Repeat for each wanted Aur package --
+  #-- Repeat for each wanted Aur package --#
     >- cd to a temporary directory ex: /tmp
     >- git clone a wanted package to the temp directory
     >- cd into the cloned package's directory 
     >- run "makepkg -s" to build the PKGBUILD
     >- mv or cp the file ending with .pkg.tar.xz to your designated Aur folder.
-  -- End --
+  #-- End --#
   >- cd to designated aur folder
   >- run "repo-add ./custom.db.tar.gz ./*" to build the custom repo
   >- Set the "Server = " line in ./pacman.conf to point to your new custom repo,
