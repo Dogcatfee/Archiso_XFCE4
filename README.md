@@ -11,8 +11,8 @@ RUNNING BUILDS
 -----------------------------------------------------------------------------
  * Basic explanation stuff:
   >- ./setup_path.sh is to add the last line to ./pacman.conf for
-    the aur packages. Build will not continue without this.
-  >- Makefile build is a shortcut for sudo ./build.sh -v 
+    the aur packages. 
+  >- Makefile build is a shortcut for ./setup_path.sh && sudo ./build.sh -v 
   >- Makefile clean is a shortcut for sudo rm -r ./work
   >- Packages can be added to or removed from packages.x86_64
   >- Users can be added through the file airootfs/root/customize_airootfs.sh
