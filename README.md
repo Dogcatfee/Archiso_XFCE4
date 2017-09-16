@@ -72,7 +72,7 @@ RUNNING BUILDS
  * If archiso/releng script breaks from a script update ( booting iso breaks
     at waiting for disk by id ).
   >- Newer scripts can be copied from /usr/share/archiso/configs/releng.
-  >- Delete /usr/share/archiso/configs/releng/airootfs/etc/systemd/system/getty@tty1.service.d/
+  >- Delete ./airootfs/etc/systemd/system/getty@tty1.service.d/
      because autologin is not wanted.
   >- Three files, airootfs/root/customize_airootfs.sh, last three lines of
     pacman.conf and the file packages.x86_64 have relevant 
