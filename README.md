@@ -49,7 +49,7 @@ RUNNING BUILDS
   - A CPU with reliable voltages and reliable heat transfer.
 -----------------------------------------------------------------------------
 ### Basic Customization stuff:
-  >- Makefile build is a shortcut for .`/setup_path.sh && sudo ./build.sh -v`
+  >- Makefile build is a shortcut for .`sudo ./build.sh -v`
   >- Makefile clean is a shortcut for `sudo rm -r ./work`
   >- Packages can be added to or removed from packages.x86_64
   >- Users can be added through the file airootfs/root/customize_airootfs.sh
