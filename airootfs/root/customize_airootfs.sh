@@ -19,7 +19,9 @@ echo -e "toor\ntoor" | passwd root
 ##Add base user, password = password
 useradd -m -G wheel user || echo "User exists"
 echo -e "password\npassword" | passwd user
+## Add user to sudo
 echo 'user ALL=(ALL:ALL) ALL' >> /etc/sudoers
+## Change user shell to zsh
 chsh -s /bin/zsh user
 
 ##Get decorative images for xfce & cinnamon
