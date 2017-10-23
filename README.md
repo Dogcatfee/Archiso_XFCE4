@@ -7,7 +7,7 @@
 
 ISO SEP-15-2017
 =============================================================================
-ISO download link for those who do not have Arch Linux, or cannot run build.
+ISO download link of a build for those who do not have Arch Linux, or cannot run build.
 Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=sharing
 
 Notable ISO packages, includes AUR packages
