@@ -21,6 +21,8 @@ midori
 wireless_tools
 dialog
 networkmanager
+network-manager-applet
+
 
 vim
 git
