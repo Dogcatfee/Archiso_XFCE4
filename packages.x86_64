@@ -8,6 +8,8 @@ xorg-server
 xorg-xinit
 
 xfce4
+gvfs
+gnome-keyring
 i3
 xterm
 
