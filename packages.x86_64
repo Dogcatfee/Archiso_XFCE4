@@ -11,31 +11,27 @@ xfce4
 gvfs
 gnome-keyring
 i3
+dmenu
 xterm
 
 tlp
 sudo
 zsh
 
-chromium
 firefox
-midori
 wireless_tools
 dialog
+gnome-keyring
 networkmanager
 network-manager-applet
 
-
 vim
 git
+wget
+curl
 
+arch-install-scripts
 unzip
 zip
 xarchiver
 gparted
-
-broadcom-wl
-yaourt
-package-query
-paper-icon-theme-git
-gtk-theme-arc-git

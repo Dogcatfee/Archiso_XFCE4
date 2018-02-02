@@ -13,7 +13,8 @@ echo "Server = file://"$PWD/aur_repo_x86_64 >> pacman.conf
 
 #Fetch AUR builder
 git clone https://github.com/Dogcatfee/AUR_BUILDER
-cp ./aur_git.links ./AUR_BUILDER/git.links
+cat ./aur_git.links | grep -v '^#' | grep h > ./AUR_BUILDER/git.links
+
 
 cd ./AUR_BUILDER
 ./git_build_packages.sh ./$repo_dir

@@ -1,6 +1,6 @@
 # Build your own Arch disk
  - Uses Archiso
- - Aur Cutom repo builder
+ - Aur local repo builder
  - Cow size resizer
  - Makefile
 
@@ -17,13 +17,10 @@ Notable ISO packages, includes AUR packages
      - Lightdm ( enabled )
      - XFCE4
      - i3
-   * Browsers
-     - chromium
+   * Browser
      - firefox
-     - midori
    * Dev tools
      - vim
-     - Visual Studio Code [Removed from GIT build]
      - git
      - base-devel
    * Themes
@@ -32,46 +29,55 @@ Notable ISO packages, includes AUR packages
    * System
      - Linux Kernel 4.12.13-1
      - Gparted
-     - Pacaur & Yaourt [Pacaur removed from GIT build]
+     - Yaourt
      - TLP ( enabled )
      - sudo
 
 RUNNING BUILDS
 =============================================================================
 
-### Basic Requirement stuff:
-  - Arch Linux install x86_64-bit
+### Build Requirements:
+  - Arch Linux x86_64-bit
   - Have all required dependencies installed, including the archiso package.
   - Have at least 5G of free disk space for a minimal build environment. 10G
   recommended.
-  - You the builder will want a virtual environment to test the ISOs,
-  ex: Virtualbox, QEMU, VMware, etc.
-  - A CPU with reliable voltages and reliable heat transfer.
+  - Builder will want a virtual environment to test ISOs,
+    * ex: Virtualbox, QEMU, VMware.
 -----------------------------------------------------------------------------
-### Basic Customization stuff:
-  >- Makefile build is a shortcut for .`sudo ./build.sh -v`
-  >- Makefile clean is a shortcut for `sudo rm -r ./work`
-  >- Packages can be added to or removed from packages.x86_64
-  >- Users can be added through the file airootfs/root/customize_airootfs.sh
-  >- Services and configs can also be written through
+### Customizing:
+  - Makefile build is a shortcut for .`sudo ./build.sh -v`
+  - Makefile clean is a shortcut for `sudo rm -r ./work`
+  - Packages can be added to or removed from packages.x86_64
+  - Users can be added through the file airootfs/root/customize_airootfs.sh
+  - Services and configs can also be written through
     airootfs/root/customize_airootfs.sh
   - Temporary filesystem size [cow size] can be modified with `./cowsize.sh`
     - ex: `./cowsize.sh 1G` for 1 gigabyte of ramdisk when booted.
 -----------------------------------------------------------------------------
-### Aur Packages Setup:
-  >- Run `./yes_build_aur.sh` to run git+makepkg on all packages in ./aur_git.links and makes custom repo. Also adds custom repo to ./pacman.conf.
-  - Add Aur packages to be installed to package list ./packages.x86_64.
- * Disabling or Removing Aur Packages:
-  >- Run `./no_aur.sh` to disable Aur in ./pacman.conf
-  >- Run `./clean_aur.sh` to remove custom repo folder.
+### Aur Packages:
+  - Place .git links for packages in `aur_git.links`
+  - Run `./yes_build_aur.sh` to assemble the packages.
+   * Adds custom repo to Archiso's pacman.conf.
+   * Fetches AUR_BUILDER from github.
+   * Fetches all packages from `aur_git.links`
+   * Builds the packages.
+   * Adds packages to local custom repo.
+   * Moves custom repo to Archiso build directory.
+
+
+ * Disabling or Removing AUR Packages:
+  - Running `./no_aur.sh`:
+    * Restores `pacman.conf.bak`.
+    * Removes custom packages from `packages.x86_64`.
+  - Running `./clean_aur.sh` removes local repo folder.
  * Re-Enabling Aur Packages:
-  >- Run `./yes_aur.sh` to enable Aur custom repo in ./pacman.conf.
+  - Running `./yes_aur.sh` enables local repo in ./pacman.conf.
 -----------------------------------------------------------------------------
-  * Fix Archiso break ( booting ISO breaks at waiting for disk by id  
-  >- Newer scripts can be copied from /usr/share/archiso/configs/releng.
-  >- Delete ./airootfs/etc/systemd/system/getty@tty1.service.d/
+  #### Fix Archiso break ( booting ISO breaks at waiting for disk by id )
+  - Newer scripts can be copied from /usr/share/archiso/configs/releng.
+  - Delete ./airootfs/etc/systemd/system/getty@tty1.service.d/
    because autologin is not wanted.
-  >- Two files, airootfs/root/customize_airootfs.sh and the file packages.x86_64 have relevant
+  - Two files, airootfs/root/customize_airootfs.sh and the file packages.x86_64 have relevant
   configuration information.
   - `cp -r /usr/share/archiso/configs/releng/ ./ && rm -r ./airootfs/etc/systemd/system/getty@tty1.service.d/`
   - Get GIT customizations `curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/airootfs/root/customize_airootfs.sh > ./airootfs/root/customize_airootfs.sh`

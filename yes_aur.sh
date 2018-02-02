@@ -18,3 +18,9 @@ cp ./pacman.conf.bak ./pacman.conf
 echo "[custom]" >> ./pacman.conf
 echo "SigLevel = Optional TrustAll" >> ./pacman.conf
 echo "Server = file://"$repo_dir >> pacman.conf
+
+# Cut https://aur.archlinux.org/ and *.git to get package name
+PACK=$(grep -v '^#' ./aur_git.links |  grep -Po '.*(?=\.)' | cut -c 27-100 )
+echo -e "$PACK" >> packages.x86_64
+printf "\nAdded to packagelist:\n--------------\n"
+echo -e "$PACK"

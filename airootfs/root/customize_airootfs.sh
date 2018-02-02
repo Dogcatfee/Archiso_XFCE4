@@ -64,7 +64,7 @@ echo  "default-user-image = #applications-internet" >> /etc/lightdm/lightdm-gtk-
 #gsettings set org.cinnamon.theme name "Arc-Dark"
 
 ##Misc services
-sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
+#sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
