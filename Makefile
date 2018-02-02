@@ -1,6 +1,6 @@
 
 
 build:
-	sudo ./build.sh -v
+	./makefile.sh
 clean:
-	sudo rm -r ./work 
+	sudo rm -r ./work
