@@ -5,10 +5,10 @@
  - Makefile
 
 
-ISO SEP-15-2017
+ISO FEB-1-2018
 =============================================================================
 ISO download link of a build for those who do not have Arch Linux, or cannot run build.
-Link: https://drive.google.com/file/d/0B_GjH5bNX6kbQmN4LUZxckFjMU0/view?usp=sharing
+Link: https://drive.google.com/file/d/1vxpwVLUWJp1wYvWWIYGumGzHJjLfWyhT/view?usp=sharing
 
 Notable ISO packages, includes AUR packages
 =============================================================================
