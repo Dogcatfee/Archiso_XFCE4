@@ -1,6 +1,6 @@
 #!/bin/bash
-
-
+# FILE: yes_aur.sh
+# DESC: Add repo to pacman.conf, add packages to packagelist
 repo_dir=$PWD/aur_repo_x86_64
 if [ "$1" != "" ]; then
     echo "Using custom repo at $1 : remember to use absalute paths."

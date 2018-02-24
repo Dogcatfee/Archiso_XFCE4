@@ -1,4 +1,6 @@
 #!/bin/bash
+# FILE: cowsize.sh
+# DESC: Change cowsize to specified parameter; ex: 1G
 
 mkdir ./airootfs/etc/profile.d
 cow_file=./airootfs/etc/profile.d/expand_cowsize.sh
