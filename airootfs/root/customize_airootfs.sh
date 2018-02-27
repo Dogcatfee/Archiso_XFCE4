@@ -7,8 +7,8 @@ sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 #echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
 locale-gen
 
-##Set timezone
-ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+##Set timezone - Set to US Pacific -8
+ln -sf /usr/share/zoneinfo/US/Pacific-New /etc/localtime
 
 ##Configure root user, password = toor
 usermod -s /usr/bin/zsh root
@@ -24,17 +24,17 @@ echo 'user ALL=(ALL:ALL) ALL' >> /etc/sudoers
 ## Change user shell to zsh
 chsh -s /bin/zsh user
 
-##Get decorative images for xfce & cinnamon
-mkdir /home/user/images
-curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_background.png > /home/user/images/xfce4_background.png
-curl  https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_launcher.png> /home/user/images/xfce4_launcher.png
+##Get decorative images for xfce & cinnamon - Now supplied in airootfs/home
+#mkdir /home/user/images
+#curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_background.png > /home/user/images/xfce4_background.png
+#curl  https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_launcher.png> /home/user/images/xfce4_launcher.png
 
-##Xfce4 configs
-mkdir /home/user/.config
-mkdir /home/user/.config/xfce4
-wget https://github.com/Dogcatfee/xfce4_configs/archive/master.zip -P /tmp/xfce4
-unzip /tmp/xfce4/master.zip -d /tmp/xfce4
-cp -r /tmp/xfce4/xfce4_configs-master/xfce4/* /home/user/.config/xfce4
+##Xfce4 configs - Now supplied in airootfs
+#mkdir /home/user/.config
+#mkdir /home/user/.config/xfce4
+#wget https://github.com/Dogcatfee/xfce4_configs/archive/master.zip -P /tmp/xfce4
+#unzip /tmp/xfce4/master.zip -d /tmp/xfce4
+#cp -r /tmp/xfce4/xfce4_configs-master/xfce4/* /home/user/.config/xfce4
 
 ##Cinnamon configs - don't work
 #wget https://github.com/Dogcatfee/cinnamon_configs/archive/master.zip -P  /tmp/cinnamon
@@ -43,6 +43,7 @@ cp -r /tmp/xfce4/xfce4_configs-master/xfce4/* /home/user/.config/xfce4
 #cp /tmp/cinnamon/cinnamon_configs-master/Arc-Dark/cinnamon.css /usr/share/themes/Arc-Dark/cinnamon/
 
 ##Fix permissions
+# chown root /home - Check in iso for correct home permissions
 chown -R user /home/user/images
 chown -R user /home/user/.config
 #chown -R user /home/user/.cinnamon
@@ -50,14 +51,14 @@ chown -R user /home/user/.config
 ##zsh config - need to run as user somehow
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-##Lightdm config
-curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/background.jpg > /etc/lightdm/background.jpg
-echo  "[greeter]" > /etc/lightdm/lightdm-gtk-greeter.conf
-echo  "theme-name = Arc-Dark" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo  "icon-theme-name = Arc" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo  "position = 25%,end -50%,center" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo  "background = /etc/lightdm/background.jpg" >> /etc/lightdm/lightdm-gtk-greeter.conf
-echo  "default-user-image = #applications-internet" >> /etc/lightdm/lightdm-gtk-greeter.conf
+##Lightdm config - Now supplied in airootfs
+#curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/background.jpg > /etc/lightdm/background.jpg
+#echo  "[greeter]" > /etc/lightdm/lightdm-gtk-greeter.conf
+#echo  "theme-name = Arc-Dark" >> /etc/lightdm/lightdm-gtk-greeter.conf
+#echo  "icon-theme-name = Arc" >> /etc/lightdm/lightdm-gtk-greeter.conf
+#echo  "position = 25%,end -50%,center" >> /etc/lightdm/lightdm-gtk-greeter.conf
+#echo  "background = /etc/lightdm/background.jpg" >> /etc/lightdm/lightdm-gtk-greeter.conf
+#echo  "default-user-image = #applications-internet" >> /etc/lightdm/lightdm-gtk-greeter.conf
 
 ##Cinnamon theme settings for Arc-Dark, don't work
 #gsettings set org.cinnamon.desktop.wm.preferences theme "Arc-Dark"
