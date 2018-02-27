@@ -26,7 +26,7 @@ chsh -s /bin/zsh user
 
 ##Get decorative images for xfce & cinnamon - Now supplied in airootfs/home
 #mkdir /home/user/images
-#curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_background.png > /home/user/images/xfce4_background.png
+#curl https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_background.png > /home/user/images/xfce4_backghttps://github.com/Dogcatfee/Archiso_XFCE4.gitround.png
 #curl  https://raw.githubusercontent.com/Dogcatfee/Archiso_XFCE4/master/image_source/images/xfce4_launcher.png> /home/user/images/xfce4_launcher.png
 
 ##Xfce4 configs - Now supplied in airootfs

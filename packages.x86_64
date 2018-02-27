@@ -6,6 +6,12 @@ lightdm-gtk-greeter
 xorg-drivers
 xorg-server
 xorg-xinit
+xorg-fonts-alias
+xorg-fonts-encodings
+xorg-mkfontscale
+gsfonts
+cantarell-fonts
+adobe-source-code-pro-fonts
 
 xfce4
 gvfs
