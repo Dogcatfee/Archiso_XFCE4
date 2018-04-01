@@ -17,6 +17,7 @@ xterm
 tlp
 sudo
 zsh
+grml-zsh-config
 
 firefox
 wireless_tools
