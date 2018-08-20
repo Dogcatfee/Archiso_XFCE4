@@ -88,12 +88,5 @@ RUNNING BUILDS
   >- Part 2: https://youtu.be/uAwkYpgg-0M
   >- Part 3: https://youtu.be/n71KQjownSI
   >- Part 4: https://youtu.be/sOaZe5jUdPU
- * If you add "-i" to /usr/bin/mkarchiso's pacstrap, do not forget to use -v
-  when running builds from ./build.sh. The '-v' verbose argument is required
-  to use with pacstrap's '-i' interactive mode, or the archiso build will
-  stall.
------------------------------------------------------------------------------
-WARNING: Compressing the disk is highly taxing on the CPU, recommend not running builds on unstable CPUs.
------------------------------------------------------------------------------
-Those at risk of overheating or otherwise.
+ * If you add "-i" to /usr/bin/mkarchiso's pacstrap, do not forget to use -v when running builds from ./build.sh. The '-v' verbose argument is required to use with pacstrap's '-i' interactive mode, or the archiso build will stall waiting for user confirmation.
 -----------------------------------------------------------------------------
