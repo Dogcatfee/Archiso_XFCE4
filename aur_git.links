@@ -1,17 +1,17 @@
 
-#Visual studio code
-#https://aur.archlinux.org/visual-studio-code.git
+# Visual studio code
+# url https://aur.archlinux.org/visual-studio-code.git
 
-#Broadcom wireless drivers
-https://aur.archlinux.org/broadcom-wl.git
+# Broadcom wireless drivers
+url https://aur.archlinux.org/broadcom-wl.git
 
-#Yaourt
-https://aur.archlinux.org/yaourt.git
-#--Deps--#
-https://aur.archlinux.org/package-query.git
+# Yaourt
+url https://aur.archlinux.org/yaourt.git
+# --Deps-- #
+url https://aur.archlinux.org/package-query.git
 
-#Paper icon theme
-https://aur.archlinux.org/paper-icon-theme-git.git
+# Paper icon theme
+url https://aur.archlinux.org/paper-icon-theme-git.git
 
-#Arc gtk theme
-https://aur.archlinux.org/gtk-theme-arc-git.git
+# Arc gtk theme
+url https://aur.archlinux.org/gtk-theme-arc-git.git
