@@ -19,7 +19,7 @@ sudo
 zsh
 grml-zsh-config
 
-firefox
+chromium
 wireless_tools
 dialog
 gnome-keyring
@@ -36,3 +36,7 @@ unzip
 zip
 xarchiver
 gparted
+
+linux
+linux-firmware
+rsync
