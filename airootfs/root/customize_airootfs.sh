@@ -75,6 +75,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 ##Enable system services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl enable lightdm
+systemctl enable NetworkManager
 systemctl enable tlp
 
 ##Set graphical for lightdm
