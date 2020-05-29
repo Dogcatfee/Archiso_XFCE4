@@ -39,4 +39,8 @@ gparted
 
 linux
 linux-firmware
+broadcom-wl
+arc-gtk-theme
 rsync
+
+paper-icon-theme-git

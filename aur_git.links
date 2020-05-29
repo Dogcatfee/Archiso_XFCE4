@@ -2,9 +2,6 @@
 # Visual studio code
 # url https://aur.archlinux.org/visual-studio-code.git
 
-# Broadcom wireless drivers
-url https://aur.archlinux.org/broadcom-wl.git
-
 # Yaourt
 # url https://aur.archlinux.org/yaourt.git
 # --Deps-- #
@@ -12,6 +9,3 @@ url https://aur.archlinux.org/broadcom-wl.git
 
 # Paper icon theme
 url https://aur.archlinux.org/paper-icon-theme-git.git
-
-# Arc gtk theme
-url https://aur.archlinux.org/gtk-theme-arc-git.git
